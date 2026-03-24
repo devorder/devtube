@@ -24,3 +24,47 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.download-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  animation: arrowDrop 1.5s infinite ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes arrowDrop {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    transform: translateY(25px);
+  }
+
+  80% {
+    transform: translateY(40px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+}
+/* @keyframes arrowDrop {
+  0% { transform: translateY(-10px); opacity: 0; }
+  30% { opacity: 1; }
+  70% { transform: translateY(35px); }
+  80% { transform: translateY(30px); }
+  90% { transform: translateY(35px); }
+  100% { transform: translateY(35px); opacity: 0; }
+} */
